@@ -1,0 +1,30 @@
+# Secrets - NEVER COMMIT
+.env
+credentials.json
+token.pickle
+client_secret_*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# ADK
+.adk/
+
+# Logs
+*.log
+
+# Keep .env.example (safe to commit)
+!.env.example
