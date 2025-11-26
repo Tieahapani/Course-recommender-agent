@@ -4,13 +4,13 @@ Multi-agent course recommendation system with Google Calendar integration. Built
 
 Finding and sticking to online courses is challenging. Learners face course overload when searching through hundreds of options, spend hours on manual planning, experience low completion rates (85% of enrolled students never finish), and lack accountability structures. AgentLearn automates the entire learning journey from discovery to daily accountability.
 
----
+
 
 ## Why Multi-Agent Architecture?
 
 Agents are the right solution because this problem requires multi-step reasoning, dynamic tool orchestration, and conversational flexibility that traditional systems can't provide. The workflow involves multiple distinct stages—gathering preferences, searching courses, ranking results, generating personalized schedules, and automating calendar events—each requiring different capabilities and context. A multi-agent architecture allows breaking this complexity into specialized sub-agents, where each focuses on one task exceptionally well while the root agent orchestrates the flow based on user intent. Agents can also dynamically decide which tools to use (web search vs. calendar API) based on conversation context, rather than following rigid scripts. This enables natural, adaptive conversations where users can change their mind or modify preferences at any point. Most importantly, the system transforms vague learning intentions into concrete, scheduled actions. By automating calendar setup, the system eliminates the planning friction that causes most people to abandon courses, turning hours of manual work into a single conversation.
 
----
+
 
 ## Features
 
@@ -36,7 +36,7 @@ Agents are the right solution because this problem requires multi-step reasoning
 - No need to repeat information in subsequent conversations
 - Maintains context of past course selections and schedules
 
----
+
 
 ## System Architecture
 
@@ -53,7 +53,7 @@ Agents are the right solution because this problem requires multi-step reasoning
 
 The sub-agents work together in a sequential pipeline for course discovery, then individually for path generation and calendar setup. Memory persistence is handled through Vertex AI Memory Bank.
 
----
+
 
 ## Demo Workflow
 
@@ -81,7 +81,6 @@ For an 8-week course with 2 study days per week, creates 16 reminder events (blu
 
 System remembers course selection and schedule. User can check progress, adjust timeline, or get recommendations for next course. Memory persists across sessions for continuity.
 
----
 
 ## Tech Stack
 
